@@ -1,4 +1,17 @@
-const db = firestore.firestore()
+const firebaseConfig = {
+    apiKey: "AIzaSyBs4UcM-6S991C_yVBgUsqcWqlyt0wSSds",
+    authDomain: "fir-aa97d.firebaseapp.com",
+    databaseURL: "https://fir-aa97d-default-rtdb.firebaseio.com",
+    projectId: "fir-aa97d",
+    storageBucket: "fir-aa97d.appspot.com",
+    messagingSenderId: "671283771919",
+    appId: "1:671283771919:web:91cb18aeea1d5b072f017a",
+    measurementId: "G-S9K2WEBBMF"
+  };
+  
+firebase.initializeApp(firebaseConfig)
+    
+const db = firebase.firestore()
 let currentUser = {}
 let profile = false 
 
@@ -13,7 +26,7 @@ function getUser(){
             swal.fire({
                 icon: "success",
                 title:"Redirecionando para a tela de Login",
-            }).then( () => {
+            }).then( () => {  
                 setTimeout( () => {
                     Window.location.replace("Login.HTML")
                 }, 1000)
@@ -54,6 +67,11 @@ async function saveProfile(){
             firstName: firstName,
             lastName: lastName,
         })
+        .then(() => {
+            setTimeout(() => {
+              window.location.replace("per.html")
+            }, 1000)
+          })
     }
 }
 

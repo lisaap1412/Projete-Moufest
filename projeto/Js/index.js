@@ -1,5 +1,4 @@
-const db = firestore.firestore()
-
+const db = firebase.firestore()
 
 function getUser(){
     firebase.auth().onAuthStateChanged( (user) => {
@@ -22,3 +21,5 @@ function getUser(){
  window.onload = function (){
      getUser()
  }
+
+ 

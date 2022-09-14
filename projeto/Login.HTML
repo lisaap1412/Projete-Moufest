@@ -13,61 +13,60 @@ crossorigin="anonymous"
 <link rel="stylesheet" href="./css/main.css" />
 
 
-<title>Login</title>
+<title>𝑳𝒐𝒈𝒊𝒏</title>
 
 <link rel="shortcut icon" href="./images/icon.png" type="imagem/x-icon">
 
  </head>
 
  <body class="bg-light">
-   <div class="container-fluid">
-     <div class="row">
-       <div class="col-10 offset-1 text-center mt-5 pb-4 text-dark">
-         <!-- <img src="./images/logo_size.png" alt='Logo '> -->
-         <h2><img src="./images/icon.png" width="40" height="40">𝐌𝐨𝐮𝐟𝐞𝐬𝐭</h2>
-        </div>
-        <div class="col-10 offset-1 bg-light shadow mb-5 border border-info">
-          <div class="row">
-            <div id="LoginLogo" 
-            class="col-6 p-3 bg-primary d-flex justify-content-center">
-              <img src="./images/.png" alt="Imagem que tem a ver com o objetivo do site" />
-            </div>
-            <div class="col-6 p-5">
-              <div id="LoginForm">
-                <h2 class="h2 text-center text-dark mb-3">Acesso</h2>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="form-control"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="password">Senha</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    class="form-control"
-                  />
-                </div>
-                <center>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary"
-                  onclick="login()">
-                  Login
-                </button>
-              </center>
 
-            </div>
-          </div>
-        </div> 
+  <form>
+   <div class="container-fluid">
+         <div class="row">
+         <div class="col-10 offset-1 text-center mt-5 pb-4 text-dark">
     </div>
+         <div class="col-10 offset-1 bg-light shadow mb-5 border border-info">
+         <div class="row">
+         <div id="LoginLogo" 
+          class="col-6 p-3 bg-light d-flex justify-content-center">
+           <img src="./images/Alongamentos.png" alt="Imagem que tem a ver com o objetivo do site" />
+    </div>
+         <div class="col-6 p-5">
+            <div id="LoginForm">
+            <h2 class="h2 text-center text-dark mb-3">Acesso</h2>
+          <div class="form-group">
+          <label for="email">Email</label>
+           <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control" 
+            />
+   </div>
+         <div class="form-group">
+         <label for="password">Senha</label>
+          <input
+           type="password"
+           name="password"
+           id="password"
+           class="form-control" 
+           />
   </div>
-   
+        <center>
+         <button
+          type="button"
+          class="btn btn-outline-primary"
+          onclick="login()">
+          Login
+         </button>
+        </center>
+   </div>
+   </div>
+   </div> 
+   </div>
+   </div>
+ </form>
 
    <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -85,10 +84,13 @@ crossorigin="anonymous"
       crossorigin="anonymous"
     ></script>
     
-    <script > "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"</script>
-    <script > "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js" </script>
-  
-    <script src="./js/init.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/6.2.0/firebase-detabase.js"> </script>
+    <script  src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js" ></script>
+
     <script src="./js/auth.js"></script>
+
  </body>
  </html>

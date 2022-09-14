@@ -1,11 +1,13 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDywpRw9mSN2IjuWTtO7EvyJTrk8E7Dt64",
-  authDomain: "moufest-29c42.firebaseapp.com",
-  projectId: "moufest-29c42",
-  storageBucket: "moufest-29c42.appspot.com",
-  messagingSenderId: "606147169915",
-  appId: "1:606147169915:web:ddaf1b674a45610b945cde"
+  apiKey: "AIzaSyBs4UcM-6S991C_yVBgUsqcWqlyt0wSSds",
+  authDomain: "fir-aa97d.firebaseapp.com",
+  databaseURL: "https://fir-aa97d-default-rtdb.firebaseio.com",
+  projectId: "fir-aa97d",
+  storageBucket: "fir-aa97d.appspot.com",
+  messagingSenderId: "671283771919",
+  appId: "1:671283771919:web:91cb18aeea1d5b072f017a",
+  measurementId: "G-S9K2WEBBMF"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig)
+

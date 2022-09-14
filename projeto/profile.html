@@ -9,14 +9,19 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
         crossorigin="anonymous"
         />
+        
         <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
         <link rel="stylesheet" href="./css/main.css" />
-        <title>Moufest</title>
+
+        <title>Meu Perfil</title>
+
+        <link rel="shortcut icon" href="./images/icon.png" type="imagem/x-icon">
+
     </head>
     <body>
         <div id="page" class="d-flex">
             <div id="sidebar" class="bg-light border-right">
-                <header>Moufest</header>
+                <header><img src="./images/icon.png" width="40" height="40">𝐌𝐨𝐮𝐟𝐞𝐬𝐭</header>
                 <nav class="list-group list-group-flush">
                     <a href="index.html" class="list-group-item list-group-item-action bg-light">
                     Dashboard</a>
@@ -110,21 +115,19 @@
         crossorigin="anonymous"
       ></script>
       
-      <script > "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"</script>
-      <script > "https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js" </script>
-      <script > "https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js" </script>
+
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>  
     
-      <script src="./Js/init.js"></script>
-      <script src="./Js/auth.js"></script>
       <script src="./Js/profile.js"></script>
       
+
       <script >
          $("#sidebar-toggle").click(function (e) {
         e.preventDefault()
         $("#page").toggleClass("toggled")
       })
-
-          
       </script>
     </body>
 </html>
