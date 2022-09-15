@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>𝐌𝐨𝐮𝐟𝐞𝐬𝐭</title>
+
+        <link rel="shortcut icon" href="./images/icon.png" type="imagem/x-icon">
+
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous"
+        />
+        <script src="https://unpkg.com/sweetalert2@9/dist/sweetalert2.all.js"></script>
+        <link rel="stylesheet" href="./css/main.css" />
+
+    </head>
+    <body>
+        <div id="page" class="d-flex">
+            <div id="sidebar" class="bg-light border-right">
+                <header><img src="./images/Alongamentos.png" width="140" height="80"></header>
+                <nav class="list-group list-group-flush">
+                    <a href="index.html" class="list-group-item list-group-item-action bg-light">
+                    Dashboard</a>
+                <a href="profile.html" class="list-group-item list-group-item-action bg-light">
+                    Perfil</a>
+                <a 
+                href="#" 
+                onclick="logout()" 
+                class="list-group-item list-group-item-action bg-light">
+                    Sair</a>
+                </nav>
+            </div>
+            <div id="page-content">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <button id="sidebar-toggle" class="btn btn-primary">Menu</button>
+                    <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto mt-2">
+                      <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Home</a>
+                      </li>   
+                      <li class="nav-item dropdown">
+                        <a
+                          id="navbarDropdown"
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                          >Meu Usuário</a
+                        >
+                        <div
+                          class="dropdown-menu dropdown-menu-right"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <a href="profile.html" class="dropdown-item">Perfil</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#" class="dropdown-item" onclick="logout()">Sair</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+        
+                <div class="card mb-3" style="max-width: 1300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./images/along.png" class="img-fluid rounded-start" alt="Alongar">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text-info">Importância do alongamento </h5>
+                        <p class="card-text">Os alongamentos são essenciais para evitar e amenizar dores na coluna e nas articulações e ajuda a evitar lesões. Ao contrário do que muitos pensam, ele não é importante apenas para quem pratica exercícios físicos. As atividades do dia a dia também podem melhorar muito com o corpo alongado e flexível.</p>
+                        <a class="card-text" href="https://www.ortocity.com.br/beneficios-do-alongamento/"><small class="text-muted">Mais informação no link:https://www.ortocity.com.br/beneficios-do-alongamento/</small></a>
+                        <p class="card-text"><small class="text-danger">OBS:NÃO SOMOS PROFICIONAIS DA ÀREA DA SAÚDE SE CASO TENHA ALGUM DESCONFORTO NO BRAÇO VÁ AO HOSPITAL.</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 1300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./images/dentromão.jpg" class="img-fluid rounded-start" alt="Mão para Dentro">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text-info">Alongamento da Mão para dentro</h5>
+                        <p class="card-text"><h5>Como fazer</h5> Estenda o braço à frente, com os dedos apontados para o chão. Suavemente, pelo dorso da mão, puxe os dedos em direção ao corpo. Segure nesta posição e, na sequência pegue e vire a sua mão para o lado ,sendo assim para esquerda e depois para direita, troque de lado e repita mantendo o alongamento de 30 Seg a 1 min por 2 x.</p>
+                        <a class="card-text" href='https://youtu.be/zEEQJ-ne7YA'><small class="text-muted">Mais informação no link: https://youtu.be/zEEQJ-ne7YA</small></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 1300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./images/imagem.png" class="img-fluid rounded-start" alt="Mão para Fora" width="300">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text-info">Alongamento da Mão para Fora </h5>
+                        <p class="card-text"><h5>Como fazer</h5> Estenda o braço à frente, com os dedos apontados para o Teto. Suavemente, pelo dorso da mão, puxe os dedos em direção a sua cabeça. Segure nesta posição e, na sequência pegue e vire a sua mão para fora ,sendo assim para esquerda e depois para direita, troque de lado e repita mantendo o alongamento de 30 Seg a 1 min por 2 x.</p>
+                        <a class="card-text" href="https://youtu.be/zEEQJ-ne7YA"><small class="text-muted">Mais informação no link: https://youtu.be/zEEQJ-ne7YA</small></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 1300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./images/dedocima.jpg" class="img-fluid rounded-start" alt="Dedo para cima">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text-info">Alongamento dos dedos </h5>
+                        <p class="card-text"><h5>Como fazer</h5> Estenda o braço à frente, com os dedos separados um do outro e apontados para o Teto. Suavemente, pela outra mão você vai puxar um dedo de cada vez em direção a sua cabeça. Segure nesta posição e, na sequência troque de lado e repita mantendo o alongamento de 30 Seg a 1 min por 2 x. Depois que fez nos dois lados pegue e faça com os dedos virados para o chão.</p>
+                        <a class="card-text" href="https://youtu.be/MroW4S-Mzzc"><small class="text-muted">Mais informação no link: https://youtu.be/MroW4S-Mzzc</small></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 1300px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./images/braco.jpg" class="img-fluid rounded-start" alt="alongamento do braço">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title text-info">Alongamento dos braços </h5>
+                        <p class="card-text"><h5>Como fazer</h5> De pé ou mesmo sentado, você consegue fazer esse simples exercício de esticar os braços.Com a postura ereta, cruze os dedos acima da cabeça e estenda os braços com as palmas viradas para cima. Permaneça nesta posição por pelo menos 15 segundos.Em seguida, coloque o braço atrás da cabeça até a mão encostar no meio das costas e segure o cotovelo, puxando-o até o seu limite.</p>
+                        <a class="card-text" href='https://blog.fisiotrauma.com.br/alongamentos-para-quem-trabalha-sentado'><small class="text-muted">Mais informação no link: https://blog.fisiotrauma.com.br/alongamentos-para-quem-trabalha-sentado</small></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="card-group">
+                  <div class="card">
+                    <img class="card-img-top" src="./images/hospital.jpg" alt="hospital" height="300">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Hospital Antônio Moreira da Costa</b></h5>
+                      <p class="card-text"><b>Endereço:</b> R. Cel. Joaquim Neto, 186 - Centro, Santa Rita do Sapucaí - MG, 37540-000
+                        <p><b>Horário de Atendimento:</b>
+                          Atendimento 24 horas por dia</p>
+                        
+                          <p><b>Contato:</b>
+                        <a href="tel:+55(35) 3473-7200">Clique aqui para ligar para o hospital (35) 3473-7200</a></p>
+                    
+                      </div>
+                    <div class="card-footer">
+                     <a class="card-text" href="https://www.hamc.org.br/"><small class="text-muted">Mais informação no site: https://www.hamc.org.br/</small></a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="./images/Tatiane.jpg" alt="Fisioterapeuta" height="300" >
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Tatiane fisioterapeuta</b></h5>
+                      <p class="card-text"> Trabalho na Clínica Santos como Fisioterapeuta e Instrutora de Pilates, também realizo atendimento domiciliar.
+                        
+                        <p><b>Contato:</b>
+                        <a href="tel:+55(35) 9928 3342">Clique aqui para ligar para o hospital (35) 9928 3342</a></p>
+
+                      </div>
+                  </div>
+
+                  <div class="card">
+                    <img class="card-img-top" src="./images/cnc.jpeg" alt="Clínica Santos" height="300">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Clínica Santos</b></h5>
+                      <p class="card-text">
+                         <p>A Fisioterapia é um jeito de fazer a diferença na vida de pessoas que desistiram de viver ou sofrem em um mundo onde poucas pessoas sentem empatia pela outra.</p>
+                        
+                         <p><b>Horário de Atandimento:</b>
+                        7:30 ás 11:00 com atendimento de Fisioterapia do segundos
+                        e das 13:00 ás atendimento de Pilates.
+                        </p>
+
+                        <p><b>Contato:</b>
+                        <a href="tel:+55(35) 3471 2976">Clique aqui para ligar para o hospital (35) 3471 2976</a></p>
+
+                        <a class="card-text" href="https://instagram.com/clinicasantos_srs?igshid=YmMyMTA2M2Y="><small class="text-muted">Mais informação no site: https://instagram.com/clinicasantos_srs?igshid=YmMyMTA2M2Y=</small></a>
+
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div> -->
+                
+            </div>
+        </div>
+       
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+      ></script>
+      
+      <script  src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js" ></script> 
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js" ></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js" ></script>
+    
+      <script src="./Js/auth.js"></script>
+      <script src="./Js/index.js"></script>
+
+      <script >
+         $("#sidebar-toggle").click(function (e) {
+         e.preventDefault()
+         $("#page").toggleClass("toggled")
+      })
+      </script>
+    </body>
+</html>
