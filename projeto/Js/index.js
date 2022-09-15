@@ -11,7 +11,7 @@ function getUser(){
                 title:"Redirecionando para a tela de Login",
             }).then( () => {
                 setTimeout( () => {
-                    Window.location.replace("Login.HTML")
+                    window.location.replace("Login.HTML")
                 }, 1000)
             })
         }

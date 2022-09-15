@@ -69,7 +69,7 @@ async function saveProfile(){
         })
         .then(() => {
             setTimeout(() => {
-              window.location.replace("per.html")
+              window.location.replace("profile.html")
             }, 1000)
           })
     }
