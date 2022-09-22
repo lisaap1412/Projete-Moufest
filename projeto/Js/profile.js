@@ -36,6 +36,7 @@ function getUser(){
 }
 
 async function getUserInfo(uid){
+    // console.log("Teste")
     const logUsers = await db.collection("profile").where("uid" , "==", uid).get()
     let userInfo = document.getElementById("userInfo")
     if (logUsers.docs.length == 0){
@@ -61,7 +62,7 @@ async function saveProfile(){
             firstName: firstName,
             lastName: lastName,
         })
-        getUserInfo()
+        getUserInfo(currentUser.uid)
     } else {
         await db.collection("profile").doc(currentUser.id).update({
             firstName: firstName,
